@@ -1,0 +1,138 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translatex(-350px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav.visible {
+  transform: translatex(0);
+}
+
+.nav-black {
+  background-color: rgb(0, 0, 0);
+  width: 30%;
+  max-width: 290px;
+  min-width: 270px;
+  transition-delay: 0.1s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: rgb(222, 54, 54);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.1s;
+}
+
+.nav-white {
+  width: 95%;
+  position: relative;
+  padding: 4rem;
+  background-color: white;
+  transition-delay: 0.3s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.2s;
+}
+
+.close-btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  opacity: 0.3;
+}
+
+.list {
+  margin: 2rem 0;
+}
+
+.list li {
+  margin: 1rem 0;
+}
+
+.list li a {
+  text-transform: uppercase;
+}
+
+.list ul {
+  padding-left: 2rem;
+}
